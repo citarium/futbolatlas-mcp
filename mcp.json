@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "futbol-atlas": {
+      "type": "streamable-http",
+      "url": "https://futbolatlas.app/mcp"
+    }
+  }
+}
