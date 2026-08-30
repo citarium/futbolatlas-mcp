@@ -13,6 +13,8 @@ Nothing to install. It is a hosted streamable-HTTP endpoint:
 https://futbolatlas.app/mcp
 ```
 
+Also listed on [Smithery](https://smithery.ai/servers/futbolatlas/futbolatlas).
+
 ## Add it to a client
 
 **Claude Code**
