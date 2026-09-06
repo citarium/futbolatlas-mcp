@@ -144,6 +144,23 @@ files an agent can read directly:
 Each knowledge object has a human page and a machine twin at the same id,
 with a canonical URL that agrees across all of them.
 
+### The `version` in this repository's `server.json`
+
+It is the **corpus** version, not the framework's (ADR-017): a corpus that
+grew by forty objects has to be republishable without waiting for someone
+to cut a software release, and a framework patch must not announce "new
+version" for corpora that did not change. The authoritative value is the
+one the site generates and serves — the `version` field of
+[`/.well-known/mcp/server.json`](https://futbolatlas.app/.well-known/mcp/server.json),
+alongside `_citarium.corpus_version`.
+
+The copy in this repository is **maintained by hand**, and it drifted: it
+sat at `0.6.5` while the site served `2026.809.141`. Before publishing to
+the MCP Registry, copy the served value. The two files are otherwise NOT
+identical on purpose — this one carries `?via=registry` on its remote and
+the served one carries `?via=manifest`, so the traffic each channel sends
+can be told apart.
+
 ## Behaviour worth knowing before you integrate
 
 - **`POST` only.** Every other method answers `405` with an `Allow: POST, OPTIONS` header.
