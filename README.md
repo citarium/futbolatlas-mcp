@@ -2,6 +2,8 @@
 
 > The Laws of the Game and world football's major competitions, every claim cited to primary sources
 
+[![smithery badge](https://smithery.ai/badge/futbolatlas/futbolatlas)](https://smithery.ai/servers/futbolatlas/futbolatlas)
+
 A **remote MCP server** over a curated knowledge graph. Every claim it
 returns is bound to a registered source: the tools hand back claims *with*
 their citations and a confidence value, so an agent can show its work
